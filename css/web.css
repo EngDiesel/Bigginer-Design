@@ -1,0 +1,311 @@
+/* start Global */
+*
+{
+   
+    -webkit-box-sizing: border-box;
+}
+body
+{
+    font-family:  sans-serif , fantasy 
+}
+
+.wrapper
+{
+    width: 1200px;
+    margin: 0 auto
+}
+/* End Global */
+
+/* Start NavBar */
+
+.navBar .logo
+{
+    float: left;
+    width: 30%;
+}
+
+.navBar .logo h2 span
+{
+    font-weight: bolder
+}
+
+.navBar
+{
+    color: white;
+    height: 0;
+    position: relative;
+    z-index: 2;
+}
+.navBar .links
+{
+    float: right;
+    list-style: none;
+    margin: 25px 15px;
+    
+}
+
+.navBar .links li
+{
+    display: inline-block;
+    margin: 10px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+.navBar .links li a
+{
+    color:#fff;
+    text-decoration: none;
+}
+
+.navBar .links li.active ,
+.navBar .links li:hover
+{
+    color: #1abc9c;
+    border-bottom: 2px solid #1abc9c;
+}
+
+.navBar .links li.active a ,
+.navBar .links li a:hover
+{
+    color: aqua
+}
+
+/* End NavBar */
+
+/* Start Header */
+.header
+{
+	background: url('../imgs/6.jpg');
+    position: relative;
+}
+
+.header .overlay 
+{
+    color: aliceblue;
+	background-color: #000;
+    opacity: 0.6;
+   position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1
+}
+
+/* End Header */
+
+/* Start Slider */
+
+.header .bx-wrapper{
+    height: 100%;
+    background-color: none ;
+    position: absolute;
+}
+
+.header .bx-wrapper .bx-viewport {
+	box-shadow: none;
+    border: 0;
+    background: none;
+    height: 100% !important ;
+    text-align: center;
+}
+
+.header .bxslider
+{
+    padding-top: 0;
+}
+
+.header .bxslider li 
+{
+    margin: 0;
+}
+
+.header .bxslider li 
+{
+    padding: 0;
+    margin: 0;
+    color: white;
+	display: block;
+}
+
+.header .bxslider li h1
+{
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.header .bxslider li p
+{
+    margin-top: 5px
+}
+
+.header .bxslider li h1 span
+{
+    color:#1abc9c;
+}
+
+/* End Slider */
+
+/* Start About */
+
+.about {
+	height: 850px;
+    padding: 30px;
+}
+.about h1
+{
+    margin-top: 0;
+}
+
+                /* Start Skills */
+.about .about-skill {
+	float:left;
+    width: 50%;
+    padding: 15px;
+    margin-bottom: 15px
+    
+}
+.about .about-skill .item {
+   /* float: left;*/
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 30px
+}
+
+.about .about-skill .item i {
+	color:#1abc9c;
+    width: 100%;
+    
+}
+
+.about .about-skill .info {
+	width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+                /* End skills */
+/* End About */
+hr
+{
+    border: 4px solid #eee;
+}
+/* Start Our Team */
+.ourTeam {
+	padding: 30px 0 ;
+    
+}
+.ourTeam .box {
+	float: left;
+}
+.ourTeam .box:first-child {
+    width: 35%;
+}
+.ourTeam .box:first-child p {
+    color: dimgrey;
+    line-height: 1.4
+}
+.ourTeam .box:not(:first-child) img{
+    cursor: pointer;
+    width: 100%;
+}
+.ourTeam .box:not(:first-child){
+    width: 15.25%;
+    margin: 0 0 0 1%;
+    position: relative;
+    transition: all ease-in-out;
+    cursor: pointer;
+}
+.ourTeam .box:not(:first-child) .overlay {
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26,188,156,.8);
+    color: white;
+    line-height: 175px;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+
+.ourTeam .box:not(:first-child):hover .overlay{
+    display: block;
+    cursor: pointer;
+}
+/* End Our Team */
+
+
+/* Start Testimonials */
+.testim {
+    text-align: center;
+	color: white;
+    background-image: url(../imgs/5.jpg);
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+.testim .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+	background-color: rgba(0,0,0,0.8);
+    padding: 80px
+}
+.testim .overlay h1 {
+    margin-top: 30px;
+}
+.testim .overlay q {
+    color: #d0d0d0;
+    line-height: 2;
+}
+.testim .overlay p {
+    color: #1abc9c;
+    font-weight: bold;
+}
+
+                        /*Slider*/
+.Slider > div {
+    display: none;
+}
+.Slider .Active {
+	display: block;
+}
+                        /*Slider*/
+/* End Testimonials */
+
+/* Start My Framework */
+.special_heading{
+    position: relative;
+}
+
+.special_heading:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:35px;
+    left: 0;
+    right: 0;
+    width: 22px;
+    border-bottom: 3px solid #333;
+}
+
+.clearFix
+{
+    clear: both;
+}
+/* End My Framework */
